@@ -201,10 +201,7 @@ eraseBtn.addEventListener("click", () => {
 // Add Numbers
 function addBoardNums() {
   for (let i = 0; i < numBtns.length; i++) {
-    numBtns[i].addEventListener("click", () => {
-      subCells[activeSubIdx].innerText = i + 1;
-      subCells[activeSubIdx].classList.add("active");
-    });
+    numBtns[i].addEventListener("click", () => subCells[activeSubIdx].innerText = i + 1);
   }
 }
 
