@@ -134,7 +134,7 @@ function renderRandomSubs() {
     const ranValue = generateNum(9, 1);
     if (subCells[ranIdx].innerHTML === "") {
       subCells[ranIdx].innerHTML = ranValue;
-      subCells[ranIdx].style.pointerEvents = "none"
+      subCells[ranIdx].style.pointerEvents = "none";
       subCells[ranIdx].classList.add("randomly");
       counter++;
       if (RANDOM_LIMIT === counter) break;
@@ -202,10 +202,8 @@ eraseBtn.addEventListener("click", () => {
 function addBoardNums() {
   for (let i = 0; i < numBtns.length; i++) {
     numBtns[i].addEventListener("click", () => {
-      if (subCells[activeSubIdx].innerHTML === "") {
-        subCells[activeSubIdx].innerText = i + 1;
-        subCells[activeSubIdx].classList.add("active");
-      }
+      subCells[activeSubIdx].innerText = i + 1;
+      subCells[activeSubIdx].classList.add("active");
     });
   }
 }
@@ -221,20 +219,20 @@ renderCells();
 // #2 -> onNew bosilganda loyihani noldan boshalsh kerak(Inomjon) 👍🏻
 // #3 -> biz kiritgan xar bir subCell ajralib turishi kerak(Avazbek) 👍🏻
 // #4 -> cellRender function yaratishimiz kerak(Abdulxoliq) 👍🏻
-// #5 -> onErase boganda tanlangan subCell remove bolishi kerak(Murtozxon) 👍
 // #6 -> randomSubCell takroriy index da bolmasligi kerak(Husniddinbek) 👍🏻
 // #7 -> keyboard event larni qoshish(Muhiddin) 👍🏻
 // #8 -> select qilingan elementga active class ni qoshish(Muhammaddiyor K) 👍🏻
 // #9 -> oldin yozilgan element ustiga takroran yozish(Muhammaddiyor) 👍🏻
 // #10 -> Bosilganni index ni topib olish(Hasanboy) 👍🏻
-// #11 -> numBtns lardan foydalanish(Samandar) 👍
 // #12 -> subCell boshqa tanlanganda oldingi tanlangan subCell dan "active" classni remove qilish(Muhammaddiyor) 👍🏻
 // #13 -> Enter bosilganda active subCell ni "active" class ni remove qilish(Muhammadumar) 👍🏻
 // #14 -> Backspace keyboardEvent ni ishlatish(Inomjonbek) 👍🏻
 // #15 -> Kiritlgan qiymat doimo bitta belgi va raqam bolishi kerak, add validation function (Muhammaddiyor) 👍🏻
 // #16 -> Keyboard dan "0" kiritmasligini tekshirish(Inomjonbek) 👍🏻
 // #17 -> Oldin qiymat kiritlgan subCellga kiritilgan yangi qiymat eskisi bilan bir xil bolsa, ushbu subCell ni empty ga aylantirsin 👍🏻
-// #18 -> checkFilled function qoshish(Muhammadumar)
+// #11 -> numBtns lardan foydalanish(Samandar) 👍
+// #5 -> onErase boganda tanlangan subCell remove bolishi kerak(Murtozxon) 👍
 // #19 -> randomSubCell larni ozgartirib bomasin(Rahmonbek) -> 👍
 // #20 -> Barchasiga shadown operation ni qoshish 👍
+// #18 -> checkFilled function qoshish(Muhammadumar)
 // #21 -> Sub dan tashqariga bosilsa sub ning active ni ochirish
